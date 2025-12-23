@@ -1,176 +1,195 @@
-@import "colors.css";
 
 * {
     border: none;
-    font-family: "Maple Mono";
-    font-feature-settings: "zero";
-    font-size: 15px;
-    min-height: 10px;
+    border-radius: 10px;
+    font-family: "JetBrainsMono Nerd Font", "JetBrains Mono", monospace;
+    font-weight: bold;
+    font-size: 14px;
+    min-height: 0;
 }
 
 window#waybar {
-    background-color: @bg;
-    margin-top: 6px;
-    border-radius: 10px;
+    background: rgba(21, 18, 27, 0);
+    color: #cdd6f4;
 }
 
-window#waybar.hidden {
-    opacity: 0.2;
+tooltip {
+    background: #000000;
+    border-radius: 7px;
+    border-width: 2.5px;
+    border-style: solid;
+    border-color: #8aadf4;
+    padding-right: 5px;
+    padding-left: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
-#window {
-    transition: none;
-    color: transparent;
-    border-radius: 10px;
-    background: transparent;
-}
 
-#workspaces {
-    margin: 6px 6px 6px 6px;
-    border-radius: 18px;
-    background: @bg-light;
-    transition: none;
-    padding-left: 12px;
-    padding-right: 6px;
-}
 
 #workspaces button {
-    transition: none;
-    color: @cyan;
-    background: transparent;
-    margin-right: 10px;
-}
-
-#workspaces button.persistent {
-    transition: none;
-    color: @purple;
-    background: transparent;
-    font-size: 4px;
-}
-
-#workspaces button.empty {
-    color: @magenta;
-    font-size: 2px;
-    transition: none;
-    background: transparent;
+    color: #6c7086;
+    margin-right: 5px;
+    padding-right: 0px;
+    padding-left: 0px;
 }
 
 #workspaces button.active {
-    transition: none;
-    color: @yellow;
-    background: transparent;
-    font-size: 4px;
+    color: #cba6f7;
 }
 
-#network {
-    margin-top: 6px;
-    margin-left: 8px;
-    padding-left: 10px;
-    padding-right: 10px;
-    margin-bottom: 6px;
+#workspaces button.focused {
+    color: #cba6f7;
+    background: rgba(203, 166, 247, 0.2);
+    border-radius: 13px;
+}
+
+#workspaces button.persistent {
+    color: #6c7086;
+}
+
+#workspaces button.empty {
+    color: #6c7086;
+}
+
+#workspaces button.active,
+#workspaces button.visible {
+    color: #cba6f7;
+    box-shadow: inset 0 -1px #1e1e2e;
+}
+
+#workspaces button.urgent {
+    color: #f38ba8;
+}
+#custom-weather,
+#language,
+#cpu,
+#window,
+#clock,
+#pulseaudio,
+#pulseaudio.microphone,
+#workspaces,
+#tray,
+#memory,
+#disk,
+#tray {
+    background: #1e1e2e;
+    opacity: 1.0;
+    padding: 1.5px 7px 1.5px 7px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-radius: 13px;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+#workspaces {
+    background: #1e1e2e;
+    border-radius: 13px;
+    margin-left: 5px;
+    padding-right: 0px;
+}
+
+#window {
+    border-radius: 13px;
+    margin-left: 15px;
+    margin-right: 5px;
+    padding: 3px 20px;
     font-size: 14px;
-    font-weight: bold;
-    transition: none;
-    color: @yellow;
-}
-
-#pulseaudio {
-    margin-top: 6px;
-    margin-left: 8px;
-    padding-left: 10px;
-    padding-right: 10px;
-    margin-bottom: 6px;
-    font-size: 14px;
-    font-weight: bold;
-    transition: none;
-    color: @blue;
-}
-
-#battery {
-    margin-top: 6px;
-    margin-left: 8px;
-    padding-left: 10px;
-    padding-right: 10px;
-    margin-bottom: 6px;
-    font-size: 14px;
-    font-weight: bold;
-    color: @green;
-}
-
-#battery.charging,
-#battery.plugged {
-    color: @green;
-}
-
-#battery.critical:not(.charging) {
-    color: @red;
-    animation-name: blink;
-    animation-duration: 0.5s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-}
-
-@keyframes blink {
-    to {
-        color: @red;
-    }
+    min-width: 250px;
+    color: #cba6f7;
+    font-weight: 600;
 }
 
 #clock {
-    margin-top: 6px;
-    margin-left: 8px;
-    padding-left: 12px;
-    padding-right: 17px;
-    margin-right: 10px;
-    margin-bottom: 6px;
-    font-size: 14px;
-    font-weight: bold;
-    color: @fg;
+    color: #a6e3a1;
+    border-radius: 0px 13px 13px 0px;
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
+#network {
+    color: #f9e2af;
+    border-radius: 7px 7px 7px 7px;
+    margin-right: 5px;
+}
+
+#custom-notifications {
+    color: #f9e2af;
+    border-radius: 7px 7px 7px 7px;
+    padding-left: 9px;
+    padding-right: 15px;
+    margin-left:  2px;
+    margin-right: 2px;
+
+}
+
+#custom-updates {
+    color: #89b4fa;
+    border-radius: 7px 7px 7px 7px;
+    border-left:  0px;
+    border-right: 0px;
+    margin-left:  2px;
+    margin-right: 2px;
+}
+
+#custom-player {
+ color: #cba6f7;
+ border-radius: 7px 7px 7px 7px;
+ padding-left: 4px;
+ margin-left:  5px;
+ margin-right: 5px;
 }
 
 #memory {
-    margin-top: 6px;
-    margin-left: 8px;
-    padding-left: 12px;
-    padding-right: 12px;
-    margin-right: 10px;
-    margin-bottom: 6px;
-    font-size: 14px;
-    font-weight: bold;
-    color: @cyan;
+    color: #89b4fa;
+    border-radius: 0px 0px 0px 0px;
+    margin-left: 0px;
+    margin-right:0px;
 }
 
-#temperature {
-    margin-top: 6px;
-    margin-left: 8px;
-    padding-left: 12px;
-    padding-right: 12px;
-    margin-right: 10px;
-    margin-bottom: 6px;
-    font-size: 14px;
-    font-weight: bold;
-    color: @orange;
+#disk {
+    color: #f9e2af;
+    border-radius: 0px 13px 13px 0px;
+    margin-left: 0px;
+}
+
+
+#bluetooth {
+  color: #89b4fa;
+  border-radius: 0px 13px 13px 0px;
+  margin-left: 5px;
+  margin-right: 5px;
+} 
+
+#pulseaudio {
+  color: #89b4fa;
+  border-radius: 0px 0px 0px 0px;
+  margin-right: 0px;
+  margin-left: 0px;
+}
+
+#pulseaudio.microphone {
+    color: #cba6f7;
+    border-radius: 0px 0px 0px 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+#language {
+   border-radius: 13px 0px 0px 13px;
+   margin-right:0px;
 }
 
 #cpu {
-    margin-top: 6px;
-    margin-left: 17px;
-    padding-left: 10px;
-    margin-bottom: 6px;
-    padding-right: 10px;
-    font-size: 14px;
-    font-weight: bold;
-    color: @red;
+   border-radius: 13px 0px 0px 13px;
+   padding-left:10px;
+   margin-right:0px;
+   margin-left: 0px;
 }
 
-#bluetooth {
-    margin-top: 6px;
-    margin-left: 8px;
-    padding-left: 10px;
-    margin-bottom: 6px;
-    padding-right: 10px;
-    font-size: 14px;
-    font-weight: bold;
-    color: @purple;
+#custom-weather {
+   border-radius: 13px 13px 13px 13px;
+   margin-right: 0px
+   
 }
