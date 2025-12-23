@@ -1,8 +1,11 @@
 window-decoration = true
-theme = catppuccin-mocha
-font-size = 13
+theme = Catppuccin Mocha
+background-opacity = 0.9 
+font-size = 20
 font-thicken = true
-background-opacity = 0.8  
-font-family = JetBrains Mono Nerd Font
+font-family = JetBrainsMono Nerd Font
 mouse-hide-while-typing = true
 macos-option-as-alt = true
+keybind = super+t=ignore
+keybind = shift+enter=text:\n
+custom-shader = shaders/cursor_mauve.glsl
