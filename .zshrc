@@ -215,16 +215,20 @@ repo() {
 # =============================================================================
 
 # Open tmux by default if available and not already in tmux
-if command -v tmux &> /dev/null && [ -z "$TMUX" ] && [[ $- == *i* ]]; then
-  # Try to attach to existing default session, or create new one
-  tmux new-session -A -s default
+# Only start tmux if:
+# - Not already in a tmux session ($TMUX is empty)
+# - Shell is interactive (contains 'i' in $-)
+# - tmux command exists
+if [[ -z "$TMUX" ]] && [[ $- == *i* ]] && command -v tmux &> /dev/null; then
+  # Attach to existing default session or create a new one
+  # Using exec replaces the shell process with tmux
+  exec tmux new-session -A -s default
 fi
 
 # =============================================================================
 #                               FASTFETCH DISPLAY
 # =============================================================================
 
-# Show fastfetch only in interactive shells that are not inside tmux
 if [[ $- == *i* ]] && [ -z "$TMUX" ]; then
   fastfetch
 fi
