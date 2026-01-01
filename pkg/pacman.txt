@@ -26,6 +26,7 @@ hyprpaper
 intel-media-driver
 intel-ucode
 iwd
+jq
 kitty
 lazygit
 libnotify
