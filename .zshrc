@@ -222,6 +222,9 @@ alias wb="pkill waybar && waybar &"
 # source zshrc 
 alias reload="source ~/.zshrc"
 
+# bind undo to ctrl+u
+bindkey '^u' undo
+
 # Function to open GitHub repo in browser
 repo() {
   gh repo view --web
