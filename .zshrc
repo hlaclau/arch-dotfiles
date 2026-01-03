@@ -28,6 +28,9 @@ export PATH="$HOME/.local/bin:$PATH"
 # Add spicetify to path (if installed)
 [ -d "$HOME/.spicetify" ] && export PATH="$PATH:$HOME/.spicetify"
 
+# set editor variable to nvim
+export EDITOR="nvim"
+
 # =============================================================================
 #                               SHELL BEHAVIOR
 # =============================================================================
@@ -166,10 +169,10 @@ alias ls="eza --color=always --icons=always -a"
 alias ll="eza --long --color=always --icons=always --git -a"
 alias cat="bat"
 alias cd="z"
-alias n="nvim"
+alias n=$EDITOR
 alias g="git"
-alias vi="nvim"
-alias vim="nvim"
+alias vi=$EDITOR
+alias vim=$EDITOR
 
 # Git related aliases
 alias ga="git add ."
@@ -178,6 +181,9 @@ alias gs="git switch"
 alias gc='git commit -m'
 alias glog='git log --oneline --graph --all'
 alias lg="lazygit"
+alias gh-create='gh repo create --private --source=. --remote=origin && git push -u --all && gh browse'
+
+alias -s md="glow"
 alias gh-create='gh repo create --private --source=. --remote=origin && git push -u --all && gh browse'
 
 # Function for interactive directory selection with eza
