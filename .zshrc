@@ -184,6 +184,18 @@ alias lg="lazygit"
 alias gh-create='gh repo create --private --source=. --remote=origin && git push -u --all && gh browse'
 
 alias -s md="glow"
+alias -s go=$EDITOR
+alias -s py=$EDITOR
+alias -s js=$EDITOR
+alias -s ts=$EDITOR
+alias -s tsx=$EDITOR
+alias -s css=$EDITOR
+alias -s html=$EDITOR
+alias -s cs=$EDITOR
+alias -s cpp=$EDITOR
+alias -s c=$EDITOR
+alias -s rs=$EDITOR
+
 alias gh-create='gh repo create --private --source=. --remote=origin && git push -u --all && gh browse'
 
 # Function for interactive directory selection with eza
