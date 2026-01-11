@@ -1,11 +1,8 @@
-brave-nightly-bin
 catppuccin-cursors-mocha
 catppuccin-gtk-theme-mocha
 cursor-bin
 google-chrome
 ttf-ms-fonts
-vesktop-git
-hyprshot
 vicinae-bin
 yay-bin
 yay-bin-debug
