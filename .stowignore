@@ -1,0 +1,7 @@
+^README\.md$
+^pkg/
+^wallpapers/
+^\.git/
+^\.gitmodules$
+^\.stowignore$
+^Makefile$
