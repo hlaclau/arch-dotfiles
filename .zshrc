@@ -7,6 +7,10 @@ if [[ ":$FPATH:" != *":$HOME/.zsh/completions:"* ]]; then
   export FPATH="$HOME/.zsh/completions:$FPATH"
 fi
 
+
+# use mise
+eval "$(mise activate zsh)"
+
 # Access rust/cargo binaries
 export PATH="$HOME/.cargo/bin:$PATH"
 
