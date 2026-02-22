@@ -12,6 +12,7 @@ fzf
 git
 github-cli
 grim
+hyprlock
 hyprshot
 gst-plugin-pipewire
 intel-media-driver
