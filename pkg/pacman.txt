@@ -23,6 +23,7 @@ lazygit
 mpv
 neovim
 noto-fonts
+noto-fonts-cjk
 noto-fonts-emoji
 papirus-icon-theme
 qbittorrent
