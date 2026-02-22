@@ -48,30 +48,13 @@
     "separate-outputs": true
   },
   "hyprland/workspaces": {
-    "format": "{icon}",
+    "format": "{id}",
     "on-click": "activate",
     "separate-outputs": true,
-    "format-icons": {
-      "1": "",
-      "2": "",
-      "3": "",
-      "4": "",
-      "5": "",
-      "6": "",
-      "7": "",
-      "8": "",
-      "9": "",
-      "active": "",
-      "urgent": "",
-      "persistent": "",
-      "focused": "",
-      "default": "",
-
-        },
     "sort-by-number": true,
     "persistent-workspaces": {
-      "HDMI-A-1": [1, 2, 3, 4, 5],
-      "DP-3": [6, 7, 8, 9]
+      "HDMI-A-1": [6, 7, 8, 9],
+      "DP-3": [1, 2, 3, 4, 5]
     }
   },
   "clock": {
