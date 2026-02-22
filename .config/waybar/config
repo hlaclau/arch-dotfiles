@@ -50,6 +50,7 @@
   "hyprland/workspaces": {
     "format": "{icon}",
     "on-click": "activate",
+    "separate-outputs": true,
     "format-icons": {
       "1": "",
       "2": "",
@@ -69,8 +70,8 @@
         },
     "sort-by-number": true,
     "persistent-workspaces": {
-      "*": 9,
-      "DP-1": 9
+      "HDMI-A-1": [1, 2, 3, 4, 5],
+      "DP-3": [6, 7, 8, 9]
     }
   },
   "clock": {
