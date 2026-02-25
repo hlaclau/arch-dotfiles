@@ -257,3 +257,10 @@ fi
 if [[ $- == *i* ]] && [ -z "$TMUX" ]; then
   fastfetch
 fi
+
+# bun completions
+[ -s "/home/niz/.bun/_bun" ] && source "/home/niz/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
