@@ -247,7 +247,7 @@ repo() {
 if [[ -z "$TMUX" ]] && [[ $- == *i* ]] && command -v tmux &> /dev/null; then
   # Attach to existing default session or create a new one
   # Using exec replaces the shell process with tmux
-  exec tmux new-session -A -s default
+  exec tmux new-session
 fi
 
 # =============================================================================
