@@ -1,24 +1,22 @@
 return {
-  -- Poimandres theme
+  -- Zen theme
   {
-    "olivercederborg/poimandres.nvim",
+    "nendix/zen.nvim",
     lazy = false,
     priority = 1000,
     config = function()
-      require("poimandres").setup {}
+      require("zen").setup({})
     end,
     init = function()
-      vim.cmd("colorscheme poimandres")
+      vim.cmd("colorscheme zen")
     end,
   },
 
-  -- Configure LazyVim to load poimandres
+  -- Configure LazyVim to load zen
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "poimandres",
+      colorscheme = "zen",
     },
   },
 }
-
-
