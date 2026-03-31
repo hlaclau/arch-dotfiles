@@ -130,16 +130,16 @@ if command -v fzf >/dev/null 2>&1; then
   fi
 fi
 
-# Configure fzf with catppuccin colors
+# Configure fzf with shadcn zinc colors
 export FZF_DEFAULT_OPTS=" \
 --height 50% \
 --layout=default \
 --border \
---color=bg+:#313244,bg:#1E1E2E,spinner:#F5E0DC,hl:#F38BA8 \
---color=fg:#CDD6F4,header:#F38BA8,info:#CBA6F7,pointer:#F5E0DC \
---color=marker:#B4BEFE,fg+:#CDD6F4,prompt:#CBA6F7,hl+:#F38BA8 \
---color=selected-bg:#45475A \
---color=border:#6C7086,label:#CDD6F4"
+--color=bg+:#27272a,bg:#18181b,spinner:#fafafa,hl:#fafafa \
+--color=fg:#a1a1aa,header:#71717a,info:#71717a,pointer:#fafafa \
+--color=marker:#e4e4e7,fg+:#fafafa,prompt:#e4e4e7,hl+:#fafafa \
+--color=selected-bg:#3f3f46 \
+--color=border:#3f3f46,label:#a1a1aa"
 
 # Configure fzf previews
 if command -v bat >/dev/null 2>&1; then
