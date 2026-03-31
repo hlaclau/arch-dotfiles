@@ -59,21 +59,21 @@
   },
   "clock": {
     "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-    "format": "<span color='#89ddff'>󰥔 </span><span color='#a6accd'>{:%H:%M | %a %d %b}</span>",
+    "format": "<span color='#fafafa'>󰥔 </span><span color='#a1a1aa'>{:%H:%M | %a %d %b}</span>",
     "format-alt": "{:%Y-%m-%d}"
   },
 
   "cpu": {
-    "format": "<span color='#89ddff'>󰍛</span> <span color='#a6accd'>{usage}%</span>",
+    "format": "<span color='#e4e4e7'>󰍛</span> <span color='#a1a1aa'>{usage}%</span>",
     "interval": 1,
     "format-alt-click": "click",
-    "format-alt": "<span color='#00FF00'>{icon0}{icon1}{icon2}{icon3}</span> <span color='#FFFFFF'>{usage:>2}%</span> <span color='#00FF00'>󰍛</span>",
+    "format-alt": "<span color='#71717a'>{icon0}{icon1}{icon2}{icon3}</span> <span color='#fafafa'>{usage:>2}%</span> <span color='#71717a'>󰍛</span>",
     "format-icons": ["▁", "▂", "▃", "▄", "▅", "▆", "▇", "█"],
     "on-click": "gnome-system-monitor"
   },
   "memory": {
     "interval": 3,
-    "format": "<span color='#d0679d'> </span> <span color='#a6accd'>{used:0.1f}G</span>"
+    "format": "<span color='#a1a1aa'> </span> <span color='#a1a1aa'>{used:0.1f}G</span>"
   },
    
 
@@ -86,10 +86,10 @@
 
 
   "pulseaudio": {
-    "format": "<span color='#5de4c7'>{icon} </span><span color='#a6accd'>{volume}%</span>",
-    "format-bluetooth": "<span color='#5de4c7'>{icon}</span>  <span color='#a6accd'>{volume}%</span>",
+    "format": "<span color='#fafafa'>{icon} </span><span color='#a1a1aa'>{volume}%</span>",
+    "format-bluetooth": "<span color='#fafafa'>{icon}</span>  <span color='#a1a1aa'>{volume}%</span>",
     "tooltip": false,
-    "format-muted": "<span color='#d0679d'>󰝟</span>",
+    "format-muted": "<span color='#a1a1aa'>󰝟</span>",
     "on-click": "wpctl set-mute @DEFAULT_SINK@ toggle",
     "on-scroll-up": "wpctl set-volume @DEFAULT_SINK@ 10%+",
     "on-scroll-down": "wpctl set-volume @DEFAULT_SINK@ 10%-",
@@ -109,7 +109,7 @@
   },
   "pulseaudio#microphone": {
     "format": "{format_source}",
-    "format-source": "<span color='#d0679d'> </span><span color='#a6accd'>{volume}%</span>",
+    "format-source": "<span color='#a1a1aa'> </span><span color='#a1a1aa'>{volume}%</span>",
     "format-source-muted": "",
     "on-click": "wpctl set-mute @DEFAULT_SOURCE@ toggle",
     "on-scroll-up": "wpctl set-volume @DEFAULT_SOURCE@ 5%+",
@@ -118,7 +118,7 @@
 
    "hyprland/language": {
 
-  "format": "<span color='#fffac2'>󰌌</span> <span color='#a6accd'>{}</span>",
+  "format": "<span color='#e4e4e7'>󰌌</span> <span color='#a1a1aa'>{}</span>",
 
   "format-ar": "ara",
 
@@ -128,7 +128,7 @@
   "disk":{
 	"interval": 3,
   "path": "/home",
-	"format": "<span color='#5de4c7'> </span><span color='#a6accd'>{free}</span>",
+	"format": "<span color='#fafafa'> </span><span color='#a1a1aa'>{free}</span>",
 	"unit": "GB"
 },
 }
