@@ -1,17 +1,13 @@
-# Arch Dotfiles
+# Arch Dotfiles (archived)
 
-everything i use to setup my arch linux machine
-
-## Setup
+> [!IMPORTANT]
+> This repository is archived and no longer maintained.
+> My Arch Linux config now lives in [hlaclau/dotfiles](https://github.com/hlaclau/dotfiles), alongside my macOS setup, under the `arch/` stow package.
 
 ```bash
-# Clone repository
-git clone --recursive git@github.com:hlaclau/arch-dotfiles.git ~/arch-dotfiles
-cd ~/arch-dotfiles
-
-# Install packages
-cd pkg && ./install.sh
-
-# Symlink configs (using stow)
-stow -t ~ .
+git clone --recursive git@github.com:hlaclau/dotfiles.git ~/dotfiles
+cd ~/dotfiles
+mise trust
+mise run stow
+mise run install
 ```
